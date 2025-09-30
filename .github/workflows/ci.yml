@@ -89,5 +89,5 @@ jobs:
 
       - name: Executar testes Postman contra container
         run: |
-          newman run {{baseUrl}}/health          --env-var baseUrl=http://localhost:5000
+          newman run tests/postman/health-check.postman_collection.json           --env-var baseUrl=http://localhost:5000
 
